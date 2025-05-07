@@ -2,11 +2,11 @@ import { skillsData } from "../data/skills"
 
 export function Skills() {
   return (
-    <section className="skills">
-      <h2>Habilidades</h2>
-      <ul>
+    <section id="skills" className="skills">
+      <h2 className="text-2xl mb-6">Habilidades</h2>
+      <ul className="flex justify-center mx-auto">
         {skillsData.map(({ name, logo }) => (
-          <li>
+          <li className="w-24">
             <SkillCard skillName={name} skillLogo={logo} />
           </li>
         ))}

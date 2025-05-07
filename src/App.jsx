@@ -6,12 +6,14 @@ import { Skills } from './components/Skills'
 
 function App() {
   return (
-    <main className='page'>
+    <>
       <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-    </main>
+      <main className='xl:max-w-6xl mx-auto mt-18 px-4 '>
+        <Hero />
+        <Skills />
+        <Projects />
+      </main>
+    </>
   )
 }
 

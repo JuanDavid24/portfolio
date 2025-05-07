@@ -49,12 +49,6 @@ export const projectsData = [
     images: [pacman1, pacman2]
   },
   {
-    name: "Fate characters",
-    description: "página con diseño responsive y varias secciones, incluyendo una galería de imágenes organizadas en tarjetas, tablas con datos, formulario de registro presentado en un modal, entre otros recursos. La temática está inspirada en una famosa serie animada",
-    tags: ["Angular", "Firebase", "Firestore", "Bootstrap 5", "Front-end"],
-    images: [fateCharacters1, fateCharacters2, fateCharacters3]
-  },
-  {
     name: "Ta te ti",
     description: "Implementación del famoso juego en un entorno web.",
     tags: ["React", "CSS", "Game dev", "Front-end"],
