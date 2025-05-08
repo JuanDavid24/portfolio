@@ -11,6 +11,7 @@ import funkoshop3 from "../assets/projects/funkoshop-3.png";
 import funkoshop4 from "../assets/projects/funkoshop-4.png";
 import funkoshop5 from "../assets/projects/funkoshop-5.png";
 import funkoshop6 from "../assets/projects/funkoshop-6.png";
+import portfolio1 from "../assets/projects/portfolio-1.png";
 import pacman1 from "../assets/projects/pacman-1.png";
 import pacman2 from "../assets/projects/pacman-2.png";
 import taTeTi1 from "../assets/projects/ta-te-ti-1.png";
@@ -31,6 +32,12 @@ export const projectsData = [
     images: [funkoshop1, funkoshop2, funkoshop3, funkoshop4, funkoshop5, funkoshop6]
   },
   {
+    name: "Portfolio",
+    description: "El portfolio que está frente a tus ojos ¡Ni más ni menos! Un pequeño espacio para dar a conocer mi perfil y trabajos. Se buscó conseguir una interfaz simple y personal, con diseño responsive y selección de tema claro/oscuro.",
+    tags: ["React", "Tailwind CSS", "Front-end"],
+    images: [portfolio1]
+  },
+  {
     name: "Buscador de películas",
     description: "Un simple buscador que consume una API y muestra los resultados de las películas ordenados en distintos criterios. Incluye actualización dinámica de los resultados en base al input del en cada momento.",
     tags: ["React", "CSS", "Front-end"],
@@ -39,7 +46,7 @@ export const projectsData = [
   {
     name: "Fate characters",
     description: "página con diseño responsive y varias secciones, incluyendo una galería de imágenes organizadas en tarjetas, tablas con datos, formulario de registro presentado en un modal, entre otros recursos. La temática está inspirada en una famosa serie animada",
-    tags: ["Angular", "Firebase", "Firestore", "Bootstrap 5", "Front-end"],
+    tags: ["CSS", "Sass", "Bootstrap 5", "Front-end"],
     images: [fateCharacters1, fateCharacters2, fateCharacters3]
   },
   {
