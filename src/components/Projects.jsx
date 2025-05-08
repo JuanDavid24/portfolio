@@ -16,9 +16,10 @@ export function Projects() {
 
 function ProjectCard({ name, description, images, tags }) {
   return (
-    <article className="border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
+    <article className="relative border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden 
+      hover:animate-squeeze hover:scale-125 hover:z-10 hover:shadow-teal-800 hover:shadow-lg duration-150 delay-150 animate-duration-faster animate-ease-in-out">
       <a href="#">
-        <img className="h-100 object-cover saturate-50" src={images[0]} alt={`image 1 of project ${name}`} />
+        <img className="h-100 object-cover saturate-40 hover:saturate-100 duration-150" src={images[0]} alt={`image 1 of project ${name}`} />
       </a>
       <h3 className="text-lg text-center py-2">{name}</h3>
     </article>
