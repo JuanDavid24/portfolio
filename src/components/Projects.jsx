@@ -1,8 +1,9 @@
 import { projectsData } from "../data/projects"
+
 export function Projects() {
   return (
     <section id="projects">
-      <h2 className="text-2xl mb-6">Proyectos</h2>
+      <h2 className="text-2xl mb-6 text-center">Proyectos</h2>
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center align-top">
         {projectsData.map(project => (
           <li className="max-w-lg ">
