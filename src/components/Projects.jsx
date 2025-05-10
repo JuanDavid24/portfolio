@@ -6,7 +6,7 @@ export function Projects() {
       <h2 className="text-2xl mb-6 text-center">Proyectos</h2>
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center align-top">
         {projectsData.map(project => (
-          <li className="max-w-lg ">
+          <li className="max-w-lg" key={project.name}>
             <ProjectCard {...project} />
           </li>
         ))}
