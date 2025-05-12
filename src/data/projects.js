@@ -23,42 +23,50 @@ export const projectsData = [
     name: "Control Clientes",
     description: "Aplicación web que lista clientes y sus respectivos saldos, permitiendo alta, baja y modificación de los mismos. Cuenta con manejo de usuarios: registro, login, sesiones y permisos basados en roles.",
     tags: ["Angular", "Firebase", "Firestore", "Bootstrap 5", "CSS", "Fullstack"],
-    images: [controlClientes1, controlClientes2, controlClientes3, controlClientes4]
+    images: [controlClientes1, controlClientes2, controlClientes3, controlClientes4],
+    repository: "https://github.com/JuanDavid24/control-clientes",
+    demo: "https://control-clientes-cdf04.web.app/login"
   },
   {
     name: "Funkoshop",
     description: "Tienda online de Funkos. Cuenta con secciones públicas que permiten ver el catálogo de productos, filtrar, buscar y agregar los mismos al carrito. Las vistas de admin requieren autenticación de usuario y desde allí se puede agregar, editar y eliminar items del stock.",
     tags: ["Node.js", "Express", "Javascript", "EJS", "CSS", "Fullstack"],
-    images: [funkoshop1, funkoshop2, funkoshop3, funkoshop4, funkoshop5, funkoshop6]
+    images: [funkoshop1, funkoshop2, funkoshop3, funkoshop4, funkoshop5, funkoshop6],
+    repository: "https://github.com/JuanDavid24/funkoshop"
   },
   {
     name: "Portfolio",
     description: "El portfolio que está frente a tus ojos ¡Ni más ni menos! Un pequeño espacio para dar a conocer mi perfil y trabajos. Se buscó conseguir una interfaz simple y personal, con diseño responsive y selección de tema claro/oscuro.",
     tags: ["React", "Tailwind CSS", "Front-end"],
-    images: [portfolio1]
+    images: [portfolio1],
+    repository: "https://github.com/JuanDavid24/portfolio"
   },
   {
     name: "Buscador de películas",
     description: "Un simple buscador que consume una API y muestra los resultados de las películas ordenados en distintos criterios. Incluye actualización dinámica de los resultados en base al input del en cada momento.",
     tags: ["React", "CSS", "Front-end"],
-    images: [buscadorPeliculas1]
+    images: [buscadorPeliculas1],
+    repository: "https://github.com/JuanDavid24/"
   },
   {
     name: "Fate characters",
     description: "página con diseño responsive y varias secciones, incluyendo una galería de imágenes organizadas en tarjetas, tablas con datos, formulario de registro presentado en un modal, entre otros recursos. La temática está inspirada en una famosa serie animada",
     tags: ["CSS", "Sass", "Bootstrap 5", "Front-end"],
-    images: [fateCharacters1, fateCharacters2, fateCharacters3]
+    images: [fateCharacters1, fateCharacters2, fateCharacters3],
+    repository: "https://github.com/JuanDavid24/"
   },
   {
     name: "Pacman",
     description: "Proyecto individual de desarrollo de un nivel del clásico videojuego.",
     tags: ["C++", "Game dev", "Allegro"],
-    images: [pacman1, pacman2]
+    images: [pacman1, pacman2],
+    repository: "https://github.com/JuanDavid24/pacman"
   },
   {
     name: "Ta te ti",
     description: "Implementación del famoso juego en un entorno web.",
     tags: ["React", "CSS", "Game dev", "Front-end"],
-    images: [taTeTi1, taTeTi2]
+    images: [taTeTi1, taTeTi2],
+    repository: "https://github.com/JuanDavid24/tic-tac-toe"
   }
 ]
