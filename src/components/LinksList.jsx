@@ -39,7 +39,7 @@ export function LinksList() {
   );
 }
 
-function LinkButton({ name, url, icon }) {
+export function LinkButton({ name, url, icon }) {
   return (
     <a
       className="flex flex-row items-center justify-center p-5 border-2 rounded-full border-cyan-600
@@ -50,7 +50,7 @@ function LinkButton({ name, url, icon }) {
     >
       <span>{name}</span>
       <FontAwesomeIcon
-        className="h-8 w-8 fill-current text-zinc-100 group-hover:text-teal-600 duration-500"
+        className={`h-8 w-8 fill-current text-zinc-100 group-hover:text-teal-600 duration-500`}
         icon={icon}
       />
     </a>
