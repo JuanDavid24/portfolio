@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function Modal({ children, isOpen, onClose }) {
   if (isOpen) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+      <section className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-fade-in-up">
         <div className="bg-white dark:bg-gray-900 w-full sm:max-w-11/12 p-6 rounded-lg relative shadow-lg">
           {/* Botón cerrar */}
           <button
@@ -16,7 +16,7 @@ export function Modal({ children, isOpen, onClose }) {
           {/* Contenido del modal */}
           <div className="content">{children}</div>
         </div>
-      </div>
+      </section>
     );
   }
 }

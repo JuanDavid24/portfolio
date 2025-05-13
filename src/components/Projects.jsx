@@ -10,6 +10,7 @@ export function Projects() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleCloseModal = () => {
+    setModalOpen(false)
     setSelectedProject(null)
   }
 
