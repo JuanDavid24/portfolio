@@ -4,20 +4,22 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { projectsData } from "../data/projects";
 import { LinkButton } from "./LinksList";
 import { Modal } from "./Modal";
+import PictureSlider from "./Slider";
+import Slider from "react-slick";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleCloseModal = () => {
-    setModalOpen(false)
-    setSelectedProject(null)
-  }
+    setModalOpen(false);
+    setSelectedProject(null);
+  };
 
   const handleOpenModal = (project) => {
-    setSelectedProject(project)
-    setModalOpen(true)
-  }
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
   return (
     <section className="flex flex-col items-center" id="projects">
       <h2 className="text-2xl mb-6 text-center">Proyectos</h2>
@@ -25,17 +27,12 @@ export function Projects() {
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center align-top">
         {projectsData.map((project) => (
           <li className="max-w-lg" key={project.name}>
-            <MiniProjectCard
-              project={project}
-              handleClick={handleOpenModal}
-            />
+            <MiniProjectCard project={project} handleClick={handleOpenModal} />
           </li>
         ))}
       </ul>
       {selectedProject && (
-        <Modal
-          isOpen={modalOpen}
-          onClose={handleCloseModal}>
+        <Modal isOpen={modalOpen} onClose={handleCloseModal}>
           <ProjectCard project={selectedProject} />
         </Modal>
       )}
@@ -66,11 +63,25 @@ function ProjectCard({ project }) {
   const { name, description, images, tags, repository, demo } = project;
   return (
     <article className="flex lg:flex-row flex-col z-50 rounded-2xl border-2 w-full">
-      <img
-        className="width-full lg:max-w-2/3 aspect-video object-cover rounded-2xl"
-        src={images[0]}
-        alt={`imagen del proyecto ${name}`}
-      />
+      <div className="lg:max-w-2/3 ">
+        {images.length > 1 ? (
+          <PictureSlider>
+            {images.map((image, index) => (
+              <img
+                className="w-full aspect-video object-cover rounded-2xl"
+                src={image}
+                alt={`imagen ${index} del proyecto ${name}`}
+              />
+            ))}
+          </PictureSlider>
+        ) : (
+          <img
+            className="w-full aspect-video object-cover rounded-2xl"
+            src={images[0]}
+            alt={`imagen del proyecto ${name}`}
+          />
+        )}
+      </div>
       <div className="flex flex-col text-center gap-2 mx-auto justify-evenly items-center p-2">
         <h3 className="text-2xl">{name}</h3>
         <p>{description}</p>
@@ -84,12 +95,20 @@ function ProjectCard({ project }) {
         <ul className="flex gap-2 mt-4 lg:mt-0">
           {repository && (
             <li>
-              <LinkButton text="Repositorio" url={repository} icon={{iconName:faGithub, iconSize:"xl"}} />
+              <LinkButton
+                text="Repositorio"
+                url={repository}
+                icon={{ iconName: faGithub, iconSize: "xl" }}
+              />
             </li>
           )}
           {demo && (
             <li>
-              <LinkButton text="Demo" url={demo} icon={{iconName:faArrowUpRightFromSquare, iconSize:"xl"}}/>
+              <LinkButton
+                text="Demo"
+                url={demo}
+                icon={{ iconName: faArrowUpRightFromSquare, iconSize: "xl" }}
+              />
             </li>
           )}
         </ul>
