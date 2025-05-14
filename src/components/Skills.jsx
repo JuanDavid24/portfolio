@@ -11,7 +11,7 @@ export function Skills() {
     </li>
   ));
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="skills scroll-mt-20">
       <h2 className="text-2xl mb-6 text-center">Habilidades</h2>
       <ul className="flex flex-wrap justify-center gap-2 mx-auto w-11/12">
         {skillList}
