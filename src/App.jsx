@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className='xl:max-w-6xl mx-auto flex flex-col gap-30 mt-18 px-4 '>
+      <main className='xl:max-w-6xl mx-auto flex flex-col gap-30 px-4 '>
         <Hero />
         <Skills />
         <Projects />

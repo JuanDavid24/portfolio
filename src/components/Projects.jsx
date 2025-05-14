@@ -21,7 +21,7 @@ export function Projects() {
     setModalOpen(true);
   };
   return (
-    <section className="flex flex-col items-center" id="projects">
+    <section className="flex flex-col items-center scroll-mt-20" id="projects">
       <h2 className="text-2xl mb-6 text-center">Proyectos</h2>
       {/* <ProjectExpandedCard {...projectsData[0]} /> */}
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center align-top">
