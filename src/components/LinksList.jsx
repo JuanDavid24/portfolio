@@ -44,7 +44,7 @@ export function LinkButton({ text, url, icon }) {
   return (
     <a
       className="flex flex-row items-center justify-center p-5 border-2 rounded-full border-cyan-600
-          bg-gradient-to-tr from-blue-950 hover:border-teal-500 hover:brightness-150 hover:animate-pulsing
+          bg-gradient-to-tr from-blue-950 to-teal-950 hover:border-teal-500 hover:brightness-150 hover:animate-pulsing
           duration-300 ease-in cursor-pointer group"
       href={url}
       target="_blank"

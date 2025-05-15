@@ -3,3 +3,32 @@
 html {
   margin: 0;
 }
+
+header {
+  background: #1f1f4b;
+  color: whitesmoke;
+  animation: blur-and-invert linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 900px;
+}
+
+nav a:hover {
+  animation: blur-and-invert-hover linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 300px;
+}
+
+@keyframes blur-and-invert {
+  to {
+    background: rgba(58, 212, 181, 0.5);
+    backdrop-filter: blur(5px);
+    color: var(--color-teal-950)
+  }
+}
+
+@keyframes blur-and-invert-hover {
+  to {
+    border-color: var(--color-gray-800);
+    color:var(--color-gray-900)
+  }
+}

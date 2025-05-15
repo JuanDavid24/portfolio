@@ -62,7 +62,7 @@ export function MiniProjectCard({ project, handleClick }) {
 function ProjectCard({ project }) {
   const { name, description, images, tags, repository, demo } = project;
   return (
-    <article className="flex lg:flex-row flex-col z-50 rounded-2xl border-2 w-full">
+    <article className="flex lg:flex-row flex-col z-40 rounded-2xl border-2 w-full">
       <div className="lg:max-w-2/3 ">
         {images.length > 1 ? (
           <PictureSlider>
