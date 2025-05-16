@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 export const links = [
   {
     text: "CV",
     url: "https://drive.google.com/file/d/1r0g2vX3x4qj7b5k8c9m6l4f5z5z5z5z/view?usp=sharing",
-    iconName: faDownload,
+    iconName: faFile,
   },
   {
     text: "GitHub",
