@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="sticky top-0 w-screen z-50">
+    <header className="sticky top-0 w-full z-50">
       <nav>
         <ul className="flex justify-center gap-3 py-5">
           <li className="my-1">
