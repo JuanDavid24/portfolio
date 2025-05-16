@@ -4,7 +4,7 @@ html {
   margin: 0;
 }
 
-header {
+nav {
   background: #1f1f4b;
   color: whitesmoke;
   animation: blur-and-invert linear both;
