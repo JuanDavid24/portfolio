@@ -12,7 +12,7 @@ export function Skills() {
   ));
   return (
     <section id="skills" className="skills scroll-mt-20">
-      <h2 className="text-2xl mb-6 text-center">Habilidades</h2>
+      <h2 className=" mb-6 text-center text-2xl font-[silkscreen] font-bold text-shadow-pink-600 text-shadow-sm">Habilidades</h2>
       <ul className="flex flex-wrap justify-center gap-2 mx-auto w-11/12">
         {skillList}
       </ul>
@@ -23,7 +23,7 @@ export function Skills() {
 export function SkillCard({ skillName, skillLogo, animationDelay }) {
   return (
     <div
-      className="flex flex-col items-center p-3 bg-teal-400/10 bg-opacity-70 rounded-2xl
+      className="flex flex-col items-center p-3 bg-teal-400/10 bg-opacity-70 rounded-2xl text-xl font-[VT323]
         hover:scale-110 duration-300 animate-slide-in-bottom animate-duration-slow cursor-pointer group"
       style={{ animationDelay }}
     >

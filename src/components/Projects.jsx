@@ -22,7 +22,7 @@ export function Projects() {
   };
   return (
     <section className="flex flex-col items-center scroll-mt-20" id="projects">
-      <h2 className="text-2xl mb-6 text-center">Proyectos</h2>
+      <h2 className="mb-6 text-center text-2xl font-[silkscreen] font-bold text-shadow-pink-600 text-shadow-sm">Proyectos</h2>
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-items-center align-top">
         {projectsData.map((project) => (
           <li className="max-w-lg" key={project.name}>
@@ -43,7 +43,7 @@ export function MiniProjectCard({ project, handleClick }) {
   const { name, images } = project;
   return (
     <article
-      className="relative border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden cursor-pointer
+      className="relative borderborder-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden cursor-pointer
       hover:animate-squeeze hover:scale-125 hover:z-10 hover:shadow-teal-800 hover:shadow-lg duration-150 delay-150 animate-duration-faster animate-ease-in-out"
     >
       <a onClick={() => handleClick(project)}>
@@ -53,7 +53,7 @@ export function MiniProjectCard({ project, handleClick }) {
           alt={`image 1 of project ${name}`}
         />
       </a>
-      <h3 className="text-lg text-center py-2">{name}</h3>
+      <h3 className="text-lg text-center py-2 font-[silkscreen] text-shadow-purple-500 text-shadow-sm">{name}</h3>
     </article>
   );
 }
@@ -82,9 +82,9 @@ function ProjectCard({ project }) {
         )}
       </div>
       <div className="flex flex-col text-center gap-2 mx-auto justify-evenly items-center p-2">
-        <h3 className="text-2xl">{name}</h3>
+        <h3 className=" font-[silkscreen] text-xl">{name}</h3>
         <p>{description}</p>
-        <ul className="flex flex-wrap gap-2 justify-center">
+        <ul className="flex flex-wrap gap-2 justify-center  font-[VT323] text-xl">
           {tags.map((tag) => (
             <li>
               <Tag text={tag} color="teal-800" />
