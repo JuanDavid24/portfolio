@@ -5,7 +5,6 @@ import { projectsData } from "../data/projects";
 import { LinkButton } from "./LinksList";
 import { Modal } from "./Modal";
 import PictureSlider from "./Slider";
-import Slider from "react-slick";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
