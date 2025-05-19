@@ -12,6 +12,7 @@ import mysqlLogo from "../assets/logos/mysql.svg";
 import nodejsLogo from "../assets/logos/node-js.svg";
 import opensslLogo from "../assets/logos/open-ssl.svg";
 import postmanLogo from "../assets/logos/postman.svg";
+import firebaseLogo from '../assets/logos/firebase.svg'
 
 export const skillsData = [
     { name: 'HTML', logo: htmlLogo },
@@ -22,10 +23,11 @@ export const skillsData = [
     { name: 'Angular', logo: angularLogo },
     { name: 'Docker', logo: dockerLogo },
     { name: 'Express', logo: expressLogo },
-    { name: 'Git', logo: gitLogo },
-    { name: 'Linux', logo: linuxLogo },
-    { name: 'MySQL', logo: mysqlLogo },
     { name: 'Node.js', logo: nodejsLogo },
-    { name: 'OpenSSL', logo: opensslLogo },
-    { name: 'Postman', logo: postmanLogo }
+    { name: 'MySQL', logo: mysqlLogo },
+    { name: 'Firebase', logo: firebaseLogo },
+    { name: 'Git', logo: gitLogo },
+    { name: 'Postman', logo: postmanLogo },
+    { name: 'Linux', logo: linuxLogo },
+    { name: 'OpenSSL', logo: opensslLogo }
   ];
