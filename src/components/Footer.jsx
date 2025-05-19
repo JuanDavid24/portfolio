@@ -1,5 +1,5 @@
 import { LinkButton } from "./LinksList";
-import { links } from "./LinksList";
+import { links } from "../data/links";
 
 export function Footer() {
   return (
