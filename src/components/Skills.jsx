@@ -24,7 +24,7 @@ export function SkillCard({ skillName, skillLogo, animationDelay }) {
   return (
     <div
       className="flex flex-col items-center p-3 bg-teal-400/10 bg-opacity-70 rounded-2xl text-xl font-[VT323]
-        hover:scale-110 duration-300 animate-slide-in-bottom animate-duration-slow cursor-pointer group"
+        hover:scale-110 duration-300 animate-slide-in-bottom animate-duration-slow group"
       style={{ animationDelay }}
     >
       <img
