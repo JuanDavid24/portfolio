@@ -12,9 +12,9 @@ export function Hero() {
         alt="character image"
       />
       <div className="flex flex-col gap-6 lg:p-12 p-6 text-center md:mt-0 -mt-28 ">
-        <h1 className="text-4xl/2 text-balance font-[VT323]">
+        <h1 className="text-4xl/8 text-balance font-[VT323]">
           Hola, soy{" "}
-          <span className="font-[pixelify] font-bold text-7xl/10 align-text-bottom bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent tracking-wide opacity-75">
+          <span className="font-[pixelify] font-bold text-7xl lg:leading-10 leading-12 align-text-bottom bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent tracking-wide opacity-75">
             Juan David
           </span>
         </h1>
