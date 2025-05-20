@@ -21,8 +21,8 @@ import buscadorPeliculas1 from "../assets/projects/buscador-peliculas-1.png";
 export const projectsData = [
   {
     name: "Control Clientes",
-    description: "Aplicación web que lista clientes y sus respectivos saldos, permitiendo alta, baja y modificación de los mismos. Cuenta con manejo de usuarios: registro, login, sesiones y permisos basados en roles.",
-    tags: ["Angular", "Firebase", "Firestore", "Bootstrap 5", "CSS", "Fullstack"],
+    description: "Aplicación web que lista clientes y sus respectivos saldos, permitiendo alta, baja y modificación de los mismos. Cuenta con manejo de usuarios: registro, login, sesiones y permisos basados en roles. Se necesitan credenciales de acceso (ver 'README.md' en el repositorio).",
+    tags: ["Angular", "Firebase", "Bootstrap 5", "CSS", "Fullstack"],
     images: [controlClientes1, controlClientes2, controlClientes3, controlClientes4],
     repository: "https://github.com/JuanDavid24/control-clientes",
     demo: "https://control-clientes-cdf04.web.app/login"
@@ -46,14 +46,16 @@ export const projectsData = [
     description: "Un simple buscador que consume una API y muestra los resultados de las películas ordenados en distintos criterios. Incluye actualización dinámica de los resultados en base al input del en cada momento.",
     tags: ["React", "CSS", "Front-end"],
     images: [buscadorPeliculas1],
-    repository: "https://github.com/JuanDavid24/"
+    repository: "https://github.com/JuanDavid24/buscador-peliculas",
+    demo: "https://juandavid24.github.io/buscador-peliculas"
   },
   {
     name: "Fate characters",
     description: "página con diseño responsive y varias secciones, incluyendo una galería de imágenes organizadas en tarjetas, tablas con datos, formulario de registro presentado en un modal, entre otros recursos. La temática está inspirada en una famosa serie animada",
     tags: ["CSS", "Sass", "Bootstrap 5", "Front-end"],
     images: [fateCharacters1, fateCharacters2, fateCharacters3],
-    repository: "https://github.com/JuanDavid24/"
+    repository: "https://github.com/JuanDavid24/fate-characters",
+    demo: "https://juandavid24.github.io/fate-characters"
   },
   {
     name: "Pacman",
@@ -67,6 +69,7 @@ export const projectsData = [
     description: "Implementación del famoso juego en un entorno web.",
     tags: ["React", "CSS", "Game dev", "Front-end"],
     images: [taTeTi1, taTeTi2],
-    repository: "https://github.com/JuanDavid24/tic-tac-toe"
+    repository: "https://github.com/JuanDavid24/tic-tac-toe",
+    demo: "https://juandavid24.github.io/tic-tac-toe"
   }
 ]
